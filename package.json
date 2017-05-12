@@ -1,0 +1,25 @@
+{
+  "name": "teamodoro",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron app/main.js",
+    "build": "--progress --profile --colors --display-error-details --display-cached",
+    "watch": "--watch --progress --profile --colors --display-error-details --display-cached"
+  },
+  "repository": "https://github.com/SkullerR/teamodoro.git",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "~1.6.2",
+    "typescript": "^2.3.2"
+  }
+}

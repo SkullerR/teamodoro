@@ -1,0 +1,4 @@
+class Project {
+    title : string;
+
+}

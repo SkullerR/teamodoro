@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Hello World!</title>
+		<script>
+			require(__dirname + "/Controllers/AppController.js");
+		</script>
+		<script src="https://unpkg.com/vue">
+
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			Projetos atuaisss
+		</div>
+
+		<div id="app">
+		{{ message }}
+		</div>
+
+		<div id="app-2">
+			<span v-bind:title="message">
+				Hover your mouse over me for a few seconds
+				to see my dynamically bound title!
+			</span>
+		</div>
+
+
+		<div id="app-3">
+			<p v-if="seen" v-on:click="undoSeen">Now you see me</p>
+		</div>
+
+
+		<div id="app-4">
+			<ol>
+				<li v-for="todo in todos">
+				{{ todo.text }}
+				</li>
+			</ol>
+		</div>
+
+
+		<div id="app-6">
+			<p>{{ message }}</p>
+			<input v-model="message">
+		</div>
+
+
+		<div id="app-7">
+			<ol v-on:click="addToList">
+				<!--
+				Now we provide each todo-item with the todo object
+				it's representing, so that its content can be dynamic.
+				We also need to provide each component with a "key",
+				which will be explained later.
+				-->
+				<todo-item
+					v-for="item in groceryList"
+					v-bind:todo="item"
+					v-bind:key="item.id"
+					>
+				</todo-item>
+			</ol>
+		</div>
+	</body>
+
+	<script>
+
+		// You can also require other files to run in this process
+		require('./renderer.js')
+	</script>	
+</html>
