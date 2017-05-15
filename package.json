@@ -8,7 +8,7 @@
     "build": "--progress --profile --colors --display-error-details --display-cached",
     "watch": "--watch --progress --profile --colors --display-error-details --display-cached"
   },
-  "repository": "https://github.com/SkullerR/teamodoro.git",
+  "repository": "https://github.com/crhraphael/teamodoro.git",
   "keywords": [
     "Electron",
     "quick",
