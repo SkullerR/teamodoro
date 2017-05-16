@@ -1,4 +1,0 @@
-class Project {
-    title : string;
-
-}
