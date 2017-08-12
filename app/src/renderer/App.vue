@@ -1,23 +1,19 @@
 <template>
   <div id="app">
-    <menu-page></menu-page>
-    <content-page></content-page>
-
-
-    <div id="content">
-    </div>
+    <header-view></header-view>
+    <body-view></body-view>
   </div>
 </template>
 
 <script>
   import store from 'renderer/vuex/store'
-  import ContentPage from 'components/ContentPage'
-  import MenuPage from 'components/MenuPage'
+  import BodyView from 'components/BodyView'
+  import HeaderView from 'components/HeaderView'
   export default {
     store,
     components: {
-      ContentPage,
-      MenuPage
+      BodyView,
+      HeaderView
     },
   }
 </script>
@@ -32,7 +28,7 @@
 
   html,
   body { height: 100%; }
-
+  h1 { color:teal}
   body {
     align-items: center;
     background:

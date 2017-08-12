@@ -9,6 +9,7 @@ import routes from './routes'
 import header from './template/header'
 import body from './template/body'
 
+
 Vue.use(Electron)
 Vue.use(Resource)
 Vue.use(Router)

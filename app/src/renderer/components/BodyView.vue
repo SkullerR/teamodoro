@@ -1,7 +1,6 @@
-<template id="content-page">
+<template id="body-view">
   <div>
-    <!--<img src="./LandingPageView/assets/logo.png" alt="electron-vue">-->
-    <h1>Janela de conteúdo</h1>
+    <h1>Este é o template do body</h1>
 
     <router-view></router-view>
   </div>
@@ -9,11 +8,14 @@
 
 <script>
   export default {
-    name: 'content-page',
+    name: 'body-view',
   }
+
+
 </script>
 
 <style scoped>
+
   img {
     margin-top: -25px;
     width: 450px;

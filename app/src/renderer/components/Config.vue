@@ -7,7 +7,7 @@
 <script>
   export default {
     name: 'config-page',
-  }
+  }  
 </script>
 
 <style scoped>
