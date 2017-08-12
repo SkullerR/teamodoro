@@ -13,6 +13,11 @@ export default [
     path: '/configuracoes',
     name: 'config-page',
     component: require('components/Config')
+  }, 
+  {
+    path: '/registrar',
+    name: 'register-view',
+    component: require('components/RegisterView')
   }
   
   //,
